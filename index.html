@@ -11,21 +11,21 @@
   </head>
   <body>
     <p>test</p>
-    <div id="container" />
+    <div id="game" />
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
         window.addEventListener("load", event => {
             const ruffle = window.RufflePlayer.newest()
             const player = ruffle.createPlayer()
-            const container = document.getElementById("container")
-            container.appendChild(player)
+            const game = document.getElementById("game")
+            game.appendChild(player)
             player.load({
               url: "game.swf",
               contextMenu: false,
               autoplay: "on",
               unmuteOverlay:"hidden"
             })
-            player.style.width = "640px"
+            player.style.width = "641px"
             player.style.height = "412px"
         });
     </script>
