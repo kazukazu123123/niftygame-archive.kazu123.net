@@ -19,9 +19,13 @@
             const player = ruffle.createPlayer()
             const container = document.getElementById("container")
             container.appendChild(player)
-            player.load("game.swf")
+            player.load({
+              url: "game.swf",
+              contextMenu: false,
+              autoplay: "on"
+            })
             player.style.width = "640px"
-            player.style.height = "410px"
+            player.style.height = "412px"
         });
     </script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
